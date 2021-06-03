@@ -36,6 +36,26 @@
             android:backgroundTint="#a9a9a9"
             android:text="@string/btnAddColour"
             android:textColor="@color/black" />
+
+        <Button
+            android:id="@+id/buttonRemoveItem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/removepos"
+            android:textColor="@color/black"
+            android:backgroundTint="#a9a9a9"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"/>
+
+        <Button
+            android:id="@+id/buttonUpdateItem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/updatepos"
+            android:textColor="@color/black"
+            android:backgroundTint="#a9a9a9"/>
     </LinearLayout>
 
     <ListView

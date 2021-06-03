@@ -2,5 +2,7 @@
     <string name="app_name">L07Demo Dynamic ListView Colour List</string>
     <string name="editcolour">Enter new colour</string>
     <string name="editpos">Enter position number</string>
+    <string name="removepos">Remove a Colour</string>
+    <string name="updatepos">Update a Colour</string>
     <string name="btnAddColour">Add New Colour</string>
 </resources>
