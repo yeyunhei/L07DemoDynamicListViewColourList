@@ -46,8 +46,13 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 int pos = Integer.parseInt(etIndexElement.getText().toString());
+                if (pos <= alColours.size()) {
                 alColours.add(pos, etElement.getText().toString());
                 aaColour.notifyDataSetChanged();
+                } else {
+                    Toast invalid = Toast.makeText(getApplicationContext(), "Invalid position", Toast.LENGTH_SHORT);
+                    invalid.show();
+                }
             }
         });
 
@@ -64,8 +69,13 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 int pos = Integer.parseInt(etIndexElement.getText().toString());
+                if (pos < alColours.size()) {
                 alColours.remove(pos);
                 aaColour.notifyDataSetChanged();
+                }else {
+                    Toast invalid = Toast.makeText(getApplicationContext(), "Invalid position", Toast.LENGTH_SHORT);
+                    invalid.show();
+                }
             }
         });
 
@@ -73,9 +83,14 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 int pos = Integer.parseInt(etIndexElement.getText().toString());
+                if (pos < alColours.size()) {
                 String newColour = etElement.getText().toString();
                 alColours.set(pos, newColour);
                 aaColour.notifyDataSetChanged();
+                }else {
+                    Toast invalid = Toast.makeText(getApplicationContext(), "Invalid position", Toast.LENGTH_SHORT);
+                    invalid.show();
+                }
             }
         });
     }
